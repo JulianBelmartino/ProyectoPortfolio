@@ -19,7 +19,6 @@ a{
  background-color:white;
  border: 3px solid black;
 }
-
 .card-sorter{
     display:flex;
     flex-direction: row;
@@ -35,16 +34,15 @@ a{
     transition: width 2s;
     cursor:default;
 }
-#card-1{
-    background-color: rgb(78, 76, 76); 
-}
 .card .content-container{
     display:none;
 }
 .card:target > .content-container{
     display:block;
 }
-
+#card-1{
+    background-color: rgb(78, 76, 76); 
+}
 #card-2{
     background-color: orangered;
 }
