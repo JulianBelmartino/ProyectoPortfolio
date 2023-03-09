@@ -4,11 +4,6 @@
     border:none;
     overflow:hidden;
 }
-body{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/800px-Adidas_Logo.svg.png");
-    height: auto;
-    width:100%;
-}
 a{
     text-decoration: none;
     color: white;
@@ -30,72 +25,32 @@ a{
     flex-direction: row;
     justify-content: right;
 }
-#card-1{
-    background-color: rgb(78, 76, 76);
+.card{
     height: 100vh;
     width:70px;
     cursor: pointer;
-
 }
-#card-1 .content-container{
-    display:none;
-}
-#card-1:target{
+.card:target{
     width:85vw;
     transition: width 2s;
     cursor:default;
-    color:white;
-    text-decoration: none;
 }
-#card-1:target > .content-container{
+#card-1{
+    background-color: rgb(78, 76, 76); 
+}
+.card .content-container{
+    display:none;
+}
+.card:target > .content-container{
     display:block;
 }
 
 #card-2{
     background-color: orangered;
-    height: 100vh;
-    width:70px;
-}
-#card-2 .content-container{
-    display:none;
-}
-#card-2:target{
-    width:85vw;
-    -webkit-transition: width 2s;
-    cursor: default;
-}
-#card-2:target > .content-container{
-    display:block;
 }
 #card-3{
     background-color: yellow;
-    height: 100vh;
-    width:70px;
-}
-#card-3 .content-container{
-    display:none;
-}
-#card-3:target{
-    width:85vw;
-    -webkit-transition: width 2s;
-    cursor: default;
-}
-#card-3:target > .content-container{
-    display:block;
 }
 #card-4{
     background-color: green;
-    height: 100vh;
-    width:70px;
-}
-#card-4 .content-container{
-    display:none;
-}
-#card-4:target{
-    width:85vw;
-    -webkit-transition: width 2s;
-    cursor: default;
-}
-#card-4:target > .content-container{
-    display:block;
 }
